@@ -11,14 +11,14 @@ interface CardInfoProp {
     image: string,
 }
 
-
-
 function CardInfo({ data, image }: CardInfoProp) {
 
     const [state, dispatch] = useMyContext()
 
     return (
+
         <Col md={6} className="d-flex justify-content-evenly">
+
             <Card style={{ backgroundColor: state.dark ? 'rgba(0,0,0,0.2)' : '' }} text={state.dark ? 'light' : 'dark'} className="text-center m-3">
                 <Card.Header>
                     <Image src={image} fluid rounded />
@@ -34,7 +34,7 @@ function CardInfo({ data, image }: CardInfoProp) {
                     <a className="btn btn-light m-3" target="_blank" rel="noopener noreferrer" href={data?.homepage ?? data?.html_url} >
                         <HiLink size={'1.5em'} />
                     </a>
-                    <p>Stack: {data.language}</p>
+                    {/* <p className="font-monospace">Main language: {data.language}</p> */}
                 </Card.Body>
                 <Card.Footer className="text-muted d-flex justify-content-around">
                     <span className="me-2">Created at: {data?.created_at.split('T')[0]}</span>

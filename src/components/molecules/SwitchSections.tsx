@@ -21,15 +21,15 @@ function SwitchSections() {
 
                     {
                         state.swi === 'Portfolio' && <ButtonGroup>
-                            <Button variant={state.dark ? 'secondary' : 'light'} size="lg" className="pe-0 w-50">
+                            <Button variant={'light'} size="lg" className="pe-0 w-50">
 
                                 <div className={` ${state.dark ? 'bg-dark text-light' : 'bg-secondary text-dark bg-opacity-50 '}  fs-5 rounded-start py-1`}>Portfolio</div>
 
                             </Button>
 
-                            <Button onClick={handlerSwitch} variant={state.dark ? 'secondary' : 'light'} size="lg" className="ps-0 w-50">
+                            <Button onClick={handlerSwitch} variant={'light'} size="lg" className="ps-0 w-50">
 
-                                <div className="bg-light text-dark fs-5 rounded-end bg-opacity-50 py-1">Skills</div>
+                                <div className={`${state.dark ? 'bg-secondary' : 'bg-light'} text-dark fs-5 rounded-end bg-opacity-50 py-1`}>Skills</div>
 
                             </Button>
                         </ButtonGroup>
@@ -38,14 +38,14 @@ function SwitchSections() {
                     {
                         state.swi === 'Skills' && <ButtonGroup>
 
-                            <Button onClick={handlerSwitch} variant={state.dark ? 'secondary' : 'light'} size="lg" className="pe-0 w-50">
+                            <Button onClick={handlerSwitch} variant={'light'} size="lg" className="pe-0 w-50">
 
-                                <div className="bg-light text-dark fs-5 rounded-start bg-opacity-50 py-1">Portfolio</div>
+                                <div className={`${state.dark ? 'bg-secondary' : 'bg-light'}  text-dark fs-5 rounded-start bg-opacity-50 py-1`}>Portfolio</div>
 
                             </Button>
-                            <Button variant={state.dark ? 'secondary' : 'light'} size="lg" className="ps-0 w-50">
+                            <Button variant={'light'} size="lg" className="ps-0 w-50">
 
-                                <div className={` ${state.dark ? 'bg-dark text-light' : 'bg-secondary text-dark bg-opacity-50 '}  fs-5 rounded-start py-1`}>Skills</div>
+                                <div className={` ${state.dark ? 'bg-dark text-light' : 'bg-secondary text-dark bg-opacity-50 '}  fs-5 rounded-end py-1`}>Skills</div>
 
                             </Button>
 
