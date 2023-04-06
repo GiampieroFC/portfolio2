@@ -1,8 +1,6 @@
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
-import { SiGithub } from "react-icons/si";
-import { HiLink } from "react-icons/hi";
 import { useMyContext } from "../../../contexts/context";
 import { Placeholder } from "react-bootstrap";
 

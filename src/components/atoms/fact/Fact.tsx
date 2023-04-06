@@ -1,4 +1,3 @@
-import Stack from 'react-bootstrap/stack'
 import { useMyContext } from '../../../contexts/context'
 
 interface FactProp {
