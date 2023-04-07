@@ -21,7 +21,7 @@ function CardInfo({ data, image }: CardInfoProp) {
 
             <Card style={{ backgroundColor: state.dark ? 'rgba(0,0,0,0.2)' : '' }} text={state.dark ? 'light' : 'dark'} className="text-center m-3">
                 <Card.Header>
-                    <Image src={image} fluid rounded />
+                    <Image src={image} thumbnail rounded />
                 </Card.Header>
                 <Card.Body>
                     <Card.Title className="text-capitalize">/{data?.name}</Card.Title>
