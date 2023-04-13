@@ -24,7 +24,7 @@ function PicAndName() {
                 </Row>
                 <Row>
                     <Col>
-                        <h2 className="display-6 text-secondary text-center" style={{ "--bs-text-opacity": ".7", } as CSSProperties}>Software Engineer</h2>
+                        <h2 className="display-6 text-secondary text-center" style={{ "--bs-text-opacity": ".7", } as CSSProperties}>FullStack Developer</h2>
                     </Col>
                 </Row >
                 <Row>

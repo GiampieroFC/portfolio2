@@ -13,7 +13,7 @@ interface CardInfoProp {
 
 function CardInfo({ data, image }: CardInfoProp) {
 
-    const [state, dispatch] = useMyContext()
+    const [state] = useMyContext()
 
     return (
 
