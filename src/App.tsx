@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Container className={state.dark ? 'bg-dark' : 'bg-secondary bg-opacity-25'} fluid>
-      {/* <Container className='bg-dark' fluid> */}
+
       <Container>
 
         <ToggleDarkMode />
@@ -25,7 +25,7 @@ function App() {
         <SwitchSections />
 
         {state.swi === 'Portfolio' && <Portfolio />}
-        {state.swi === 'Skills' && <Skills />}
+        {state.swi === 'Stack' && <Skills />}
 
 
 

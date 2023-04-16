@@ -29,14 +29,14 @@ function SwitchSections() {
 
                             <Button onClick={handlerSwitch} variant={'light'} size="lg" className="ps-0 w-50">
 
-                                <div className={`${state.dark ? 'bg-secondary' : 'bg-light'} text-dark fs-5 rounded-end bg-opacity-50 py-1`}>Skills</div>
+                                <div className={`${state.dark ? 'bg-secondary' : 'bg-light'} text-dark fs-5 rounded-end bg-opacity-50 py-1`}>Stack</div>
 
                             </Button>
                         </ButtonGroup>
 
                     }
                     {
-                        state.swi === 'Skills' && <ButtonGroup>
+                        state.swi === 'Stack' && <ButtonGroup>
 
                             <Button onClick={handlerSwitch} variant={'light'} size="lg" className="pe-0 w-50">
 
@@ -45,7 +45,7 @@ function SwitchSections() {
                             </Button>
                             <Button variant={'light'} size="lg" className="ps-0 w-50">
 
-                                <div className={` ${state.dark ? 'bg-dark text-light' : 'bg-secondary text-dark bg-opacity-50 '}  fs-5 rounded-end py-1`}>Skills</div>
+                                <div className={` ${state.dark ? 'bg-dark text-light' : 'bg-secondary text-dark bg-opacity-50 '}  fs-5 rounded-end py-1`}>Stack</div>
 
                             </Button>
 

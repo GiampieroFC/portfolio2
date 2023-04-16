@@ -41,7 +41,7 @@ function Portfolio() {
                     data?.map((e) => <CardInfo
                         data={e}
                         key={e.html_url}
-                        image={`https://raw.githubusercontent.com/GiampieroFC/${e.name}/main/public/screenshot/screenshot.png`}
+                        image={`https://raw.githubusercontent.com/GiampieroFC/${e.name}/main/public/screenshot/screenshot.webp`}
                     />)
                     :
                     <>

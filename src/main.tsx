@@ -8,7 +8,9 @@ import { MyProvider } from './contexts/context';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <MyProvider>
+
       <App />
+
     </MyProvider>
   </React.StrictMode>,
 )

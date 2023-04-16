@@ -2,7 +2,7 @@ import { Dispatch, Reducer, ReducerAction, createContext, useContext, useReducer
 
 interface State {
     dark: boolean,
-    swi: 'Portfolio' | 'Skills'
+    swi: 'Portfolio' | 'Stack'
     message: string
 }
 interface Action {
@@ -34,7 +34,7 @@ const reducer = (state: State, action: Action) => {
         default:
             return {
                 ...state,
-                prueba: 'Recibí tu petición, pero algo salió mal'
+                message: 'Recibí tu petición, pero algo salió mal'
             };
     }
 
