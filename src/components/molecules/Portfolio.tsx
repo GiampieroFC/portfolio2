@@ -23,7 +23,7 @@ function Portfolio() {
             const request = await fetch('https://api.github.com/users/GiampieroFC/repos')
             const response: FetchData[] = await request.json()
 
-            const ordered = response.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())
+            const ordered = response.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
 
             console.log(ordered)
             setData(ordered)
