@@ -10,7 +10,7 @@ export interface FetchData {
     homepage: string,
     language: string,
     created_at: string,
-    updated_at: string,
+    pushed_at: string,
 }
 
 
@@ -23,16 +23,16 @@ function Portfolio() {
             const request = await fetch('https://api.github.com/users/GiampieroFC/repos')
             const response: FetchData[] = await request.json()
 
-            const ordered = response.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())
+            const ordered = response.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
 
             console.log(ordered)
             setData(ordered)
 
         })()
 
-        return (
-            setData([])
-        )
+        // return (
+        //     setData([])
+        // )
 
     }, [])
 

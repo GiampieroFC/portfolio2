@@ -38,7 +38,7 @@ function CardInfo({ data, image }: CardInfoProp) {
                 </Card.Body>
                 <Card.Footer className="text-muted d-flex justify-content-around">
                     <span className="me-2">Created at: {data?.created_at.split('T')[0]}</span>
-                    <span className="ms-2">Updated at: {data?.updated_at.split('T')[0]}</span>
+                    <span className="ms-2">Updated at: {data?.pushed_at.split('T')[0]}</span>
                 </Card.Footer>
             </Card>
         </Col >
