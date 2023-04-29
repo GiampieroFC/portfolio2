@@ -31,7 +31,7 @@ function CardInfo({ data, image }: CardInfoProp) {
                     <a className="btn btn-warning m-3" target="_blank" href={data?.html_url}>
                         <SiGithub size={'1.5em'} /> Repository
                     </a>
-                    <a className="btn btn-light m-3" target="_blank" rel="noopener noreferrer" href={data?.homepage ?? data?.html_url} >
+                    <a className="btn btn-light m-3" target="_blank" rel="noopener noreferrer" href={data?.homepage ? data?.homepage : data?.html_url} >
                         <HiLink size={'1.5em'} /> Application
                     </a>
                     {/* <p className="font-monospace">Main language: {data.language}</p> */}

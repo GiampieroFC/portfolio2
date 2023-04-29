@@ -30,6 +30,10 @@ function Portfolio() {
 
         })()
 
+        return (
+            setData([])
+        )
+
     }, [])
 
     return (
